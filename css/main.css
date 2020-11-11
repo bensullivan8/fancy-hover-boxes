@@ -11,7 +11,7 @@ html {
 
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: 320px;
 }
 
 .hover-box {
@@ -39,6 +39,7 @@ section {
 }
 
 .hover-box img {
+  display: block;
   filter: grayscale(100%);
   transition: all .2s linear;
   width: 100%;
