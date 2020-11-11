@@ -11,7 +11,7 @@ html {
 
 section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .hover-box {
@@ -41,10 +41,23 @@ section {
 .hover-box img {
   filter: grayscale(100%);
   transition: all .2s linear;
+  width: 100%;
 }
 
 .hover-box:hover img,
 .hover-box:focus img {
   filter: grayscale(0);
   transform: scale(1.1);
+}
+
+@media only screen and (min-width: 38em) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  section {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
