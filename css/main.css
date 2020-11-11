@@ -51,13 +51,17 @@ section {
 }
 
 @media only screen and (min-width: 38em) {
+
   section {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
+
   section {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+
 }
